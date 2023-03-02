@@ -17,9 +17,11 @@ body {
 }
 
 h1 {
-	/* position: absolute;
+	display: block;
+	height: 50px;
+	position: absolute;
 	left: 10px;
-	top: 10px; */
+	top: 10px;
 	font-size: 20px;
 	text-align: left;
 	font-weight: 100;
@@ -67,7 +69,6 @@ button:hover {
 }
 
 .wrapper {
-	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-content: center;
@@ -75,14 +76,12 @@ button:hover {
 	width: 100%;
 	height: 100%;
 	padding: 50px;
-	background-color: none;
 	overflow: hidden;
 }
 
-/* .top{
+.top {
 	width: 100%;
-	max-height: 200px;
-} */
+}
 
 .search {
 	position: relative;
@@ -131,6 +130,7 @@ img {
 	margin-right: 30px;
 	width: 150px;
 	height: 150px;
+	transition: transform 0.3s;
 }
 
 .short-info {
@@ -144,23 +144,16 @@ img {
 	display: flex;
 	flex-wrap: wrap;
 	min-width: 300px;
-	max-width: 500px;
-	max-height: 400px;
+	max-width: 590px;
+	max-height: 500px;
 	/* flex-direction: column; */
 	justify-content: space-evenly;
 	align-items: center;
 	background-color: #c3e4fb59;
-	border-radius: 10px;
+	border-radius: 6px;
 	box-shadow: 0 0.1rem 0.2rem #3838382f, 0 0.1rem 0.5rem #3838382f,
 		0 0.2rem 1.5rem #3838382f;
 }
-
-/* .row {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	align-items: center;
-} */
 
 .item {
 	flex-grow: 1;
@@ -169,6 +162,11 @@ img {
 	margin: 15px 15px;
 	font-size: 20px;
 	text-align: center;
+	transition: transform 0.3s;
+}
+
+.item:hover, .photo:hover {
+	transform: scale(1.05);
 }
 
 .item-title {
