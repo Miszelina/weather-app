@@ -14,7 +14,7 @@
 
 * Mobile support
 #
-![image](https://user-images.githubusercontent.com/42873374/222573062-3bc206f4-a5c5-4e4b-9529-b8b7662c425b.png)
+![image](https://user-images.githubusercontent.com/42873374/222574920-31930936-e113-454d-8fd0-aa19a4f9acd5.png)
 
 
 
