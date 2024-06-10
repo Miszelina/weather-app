@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- czcionka Montserrat -->
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/024adadb05.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="top">
+            <h1>Check the weather!</h1>
+            <div class="search">
+                <input type="text" placeholder="">
+                <button>search <i class="fa-solid fa-magnifying-glass"></i></button>
+                <p class="warning"></p>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="main-info">
+                <h3 class="city-name"></h3>
+                <p class="current-date"></p>
+            </div>
+            <div class="weather">
+                <div class="main-weather">
+                    <div class="weather-icon">
+                        <img src="./img/unknown.png" alt="Obrazek przedstawiający pogodę" class="photo">
+                    </div>
+                    <div class="temp">
+                        <p class="temperature"></p>
+                        <p class="short-info"></p>
+                    </div>
+                </div>
+                <div class="weather-info">
+                    <div class="item">
+                        <p class="item-title">Feels like</p>
+                        <p class="feel-like"></p>
+                    </div>
+                    <div class="item">
+                        <p class="item-title">Pressure</p>
+                        <p class="pressure"></p>
+                    </div>
+                    <div class="item">
+                        <p class="item-title">Humidity</p>
+                        <p class="humidity"></p>
+                    </div>
+                    <div class="item">
+                        <p class="item-title">Visibility</p>
+                        <p class="visibility">12</p>
+                    </div>
+                    <div class="item">
+                        <p class="item-title">Wind speed</p>
+                        <p class="wind"></p>
+                    </div>
+                    <div class="item">
+                        <p class="item-title">Cloudiness</p>
+                        <p class="clouds"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="day1"></div>
+            <div class="day2"></div>
+            <div class="day3"></div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
