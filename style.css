@@ -149,8 +149,7 @@ img {
 	align-items: center;
 	background-color: #c3e4fb59;
 	border-radius: 6px;
-	box-shadow: 0 0.1rem 0.2rem #3838382f, 0 0.1rem 0.5rem #3838382f,
-		0 0.2rem 1.5rem #3838382f;
+	box-shadow: rgba(34, 34, 34, 0.19) 5px 5px 10px;
 }
 
 .item {
@@ -170,7 +169,7 @@ img {
 
 .item-title {
 	margin-bottom: 15px;
-	font-size: 13px;
+	font-size: 15px;
 	font-weight: bold;
 	text-transform: uppercase;
 }
@@ -314,7 +313,7 @@ img {
 		overflow-y: scroll;
 	}
 	.city-name {
-		font-size: 35px;
+		font-size: 30px;
 	}
 	.main-weather {
 		margin: 0;
@@ -343,7 +342,7 @@ img {
 		overflow-y: scroll;
 	}
 	.city-name {
-		font-size: 45px;
+		font-size: 40px;
 		margin-top: 20px;
 	}
 	.main-weather {
